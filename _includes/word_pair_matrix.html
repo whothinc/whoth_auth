@@ -1,0 +1,11 @@
+{% capture all_w %}
+{% assign words = page.words | default: "" %}
+{% for word_row in site.data[words] %}
+{% for word in word_row %}
+{% include word_pair.html word=word%}
+{% endfor %}
+{% endfor %}
+{% endcapture %}
+<div class="word-matrix">
+{{ all_w | strip_newlines}}
+</div>

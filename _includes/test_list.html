@@ -1,0 +1,10 @@
+Tests:
+<ul>
+{% for test in site.tests %}	
+<li>
+<a href={{ test.url | absolute_url }}>
+{{ test.title }}
+</a>
+</li>
+{% endfor %}	
+</ul>

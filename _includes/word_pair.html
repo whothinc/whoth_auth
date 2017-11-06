@@ -1,0 +1,11 @@
+{% capture w %}
+<div>
+{% assign word = include.word %}
+{% for pair in word%}
+{% assign key = pair[0] | default: word %}
+{% assign val = pair[1] | default: word %}
+"{{key}}"={{val}}
+{% endfor %}
+</div>
+{% endcapture %}
+{{ w | strip_newlines}}

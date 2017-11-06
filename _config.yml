@@ -1,0 +1,23 @@
+title:        Select Languages
+description:  Choose your language based on letters and characters.
+url:          http://a.hoff.in
+
+version:      1.0.0
+collections:
+  tests:
+    output: true
+    permalink: /test/:name/
+
+author:
+  name:       'John Hoffer'
+  email:      'john@hoff.in'
+markdown:     kramdown
+kramdown:
+  input: GFM
+permalink:    pretty
+highlighter:  rouge
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md",".DS_Store"]
+
+image : http://commons.wikimedia.org/wiki/File:Language_icon.svg
+imagesecure : https://commons.wikimedia.org/wiki/File:Language_icon.svg

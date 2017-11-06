@@ -1,0 +1,7 @@
+.jekyll-metadata
+Gemfile.*
+_site
+
+
+*.swp
+.*.swo
